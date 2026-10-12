@@ -26,7 +26,7 @@ Before running the application, make sure your host machine has:
 Step-by-Step Usage Guide
 
 
-1. ⚠️ Shut Down Your Plex Server
+1. ⚠️ ⚠️Shut Down Your Plex Server⚠️ ⚠️
 
 You must stop your Plex Media Server software completely before running the code. If Plex attempts to write metadata to the database while a separate script locks the tables, you risk total database corruption.
 
@@ -37,8 +37,10 @@ Locate your database directory and duplicate com.plexapp.plugins.library.db to a
 • Linux / Docker: /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-in Support/Databases/
 • macOS: ~/Library/Application Support/Plex Media Server/Plug-in Support/Databases/
 ```
-3. Run the Program
-
+3. Run the Python script
+```
+python cleanup.py
+```
 4. Example
 ```
 ⚠️ Crucial: Ensure Plex Media Server is completely closed down before running this script.
